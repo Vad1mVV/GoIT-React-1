@@ -7,6 +7,7 @@ export const Box = styled.div`
     margin: auto;
 
     background-color: white;
+    border: 1px solid tomato;
     border-radius: 3px;
     box-shadow: 0px 0px 8px #bbb;
     

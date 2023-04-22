@@ -1,4 +1,5 @@
-import { Box } from "./About.styled"
+import PropTypes from 'prop-types';
+import { Box } from './About.styled';
 import { Avatar } from "./About.styled"
 import { UserName } from "./About.styled"
 import { Text } from "./About.styled"
@@ -16,4 +17,11 @@ export const About = ({avatar, username, tag, location}) => {
             {location}
         </Text>
     </Box>
+}
+
+About.propTypes = {
+    avatar: PropTypes.string,
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string
 }

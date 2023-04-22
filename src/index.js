@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from 'components/App/App';
+import { App } from 'components/App/App'; 
 import './index.css';
 import userData from 'user.json';
-import { Site } from 'App.styled';
+import statsData from 'data.json';
+import friendsData from 'friends.json';
+import transactions from 'transactions.json';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Site>
-      <App userData={userData} />
-    </Site>
+    <App userData={userData} statsData={statsData} friendsData={friendsData} transactions={transactions} />
   </React.StrictMode>
 );

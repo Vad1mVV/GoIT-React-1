@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Box } from "./Stats.styled"
 import { Block } from "./Stats.styled"
 
@@ -16,4 +17,10 @@ export const Stats = ({followers, views, likes}) => {
             <span>{likes}</span>
         </Block>
     </Box>
+}
+
+Stats.propTypes = {
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number
 }
